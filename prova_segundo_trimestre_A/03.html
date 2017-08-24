@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	/* Nadine - 23/08/2017 exercício 03 prova A 3º Trimestre */
+
+	var valor = parseInt(prompt("Digite um número menor que 1000"));
+
+	if (valor < 1000) {
+
+		var centena = parseInt(valor / 100) * 100;
+		document.write("Centena: " + centena);
+
+		var calculoDezena = valor - centena;
+		
+		var dezena = parseInt(calculoDezena / 10) * 10;
+		document.write("Dezena: " + dezena);
+
+		var unidade = calculoDezena - dezena;
+		document.write("unidade: " + unidade);
+
+	}else{
+
+		document.write("VALOR INVÁLIDO");
+
+	}
+
+
+
+
+
+
+
+</script>

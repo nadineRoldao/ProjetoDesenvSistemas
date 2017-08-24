@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	/* Nadine - 23/08/2017 exercício 03 prova B 3º Trimestre */
+	
+	var salario = 2000.00;
+	var percentual = 1.5;
+	var aumentoS = 0;
+	var aumentoP = 0;
+
+	for(var ano = 1995; ano <= 2017; ano++){
+		document.write("ano: " + ano + " - salario: " + salario.toFixed(2));
+
+		aumentoS = (percentual * salario) / 100;
+		salario = salario + aumentoS;
+
+		aumentoP = (10 * percentual) / 100;
+		percentual = percentual + aumentoP;
+	}
+
+</script>

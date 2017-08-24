@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	/* Nadine - 23/08/2017 exercício 01 prova B 3º Trimestre */
+	
+	var valor = parseInt(prompt("Digite o valor do saque"));
+	var sobra = 0;
+
+	if (valor <= 1000) {
+		var nota50 = parseInt(valor / 50);
+		document.write("Quantidade de notas de R$ 50,00: " + nota50);
+
+		sobra = valor - nota50 * 50;
+
+		var nota10 = parseInt(sobra / 10);
+		document.write("Quantidade de notas de R$ 10,00: " + nota10);
+
+		sobra -= nota10 * 10;
+
+		var nota5 = parseInt(sobra / 5);
+		document.write("Quantidade de notas de R$ 5,00: " + nota5);
+
+		var nota1 = sobra - nota5 * 5;
+		document.write("Quantidade de notas de R$ 1,00: " + nota1);
+	}else{
+		document.write("VALOR DE SAQUE INVÁLIDO");
+	}	
+
+
+
+
+
+
+
+</script>
