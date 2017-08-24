@@ -1,0 +1,52 @@
+<meta charset="utf-8" />
+<script type="text/javascript">
+  /*
+    Data: 19/03/17
+    Nome: Vitória Nadine RM: 13573
+    Nome: Vitória Lima   RM: 13482
+  */
+
+  var n1 = parseInt(prompt("Digite primeiro número"));
+  var n2 = parseInt(prompt("Digite o segundo número"));
+  var n3 = parseInt(prompt("Digite o terceiro número"));
+
+  var primeiroN = 0;
+  var segundoN = 0;
+  var terceiroN = 0;
+
+  if (n1 > n2 && n1 > n3) {
+    primeiroN = n1;
+
+  }else if ((n1 < n2 && n1 > n3) || (n1 < n3 && n1 > n2)) {
+    segundoN = n1;
+
+  }else if (n1 < n2 && n1 <n3) {
+    terceiroN = n1;
+  }
+
+  if (n2 > n1 && n2 > n3) {
+    primeiroN = n2;
+
+  }else if ((n2 < n1 && n2 > n3) || (n2 < n3 && n2 > n1)) {
+    segundoN = n2;
+
+  }else if (n2 < n1 && n2 <n3) {
+    terceiroN = n2;
+  }
+
+  if (n3 > n1 && n3 > n2) {
+    primeiroN = n3;
+
+  }else if ((n3 < n1 && n3 > n2) || (n3 < n2 && n3 > n1)) {
+    segundoN = n3;
+    
+  }else if (n3 < n1 && n3 <n2) {
+    terceiroN = n3;
+  }
+
+  document.write("Ordem Decrescente: " + "<br>");
+  document.write("Primeiro Número: " + primeiroN + "<br>");
+  document.write("Segundo Número: " + segundoN + "<br>");
+  document.write("Terceiro Número: " + terceiroN + "<br>");
+
+</script>

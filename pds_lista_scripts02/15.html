@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	/*
+		Data: 19/03/17
+		Nome: Vitória Nadine RM: 13573
+		Nome: Vitória Lima   RM: 13482
+	*/
+
+	var msg = "digite apenas S para sim, ou N para não \n \n";
+	var q1 = prompt(msg + "Telefonou Para a Vítima ? ");
+	var q2 = prompt(msg + "Esteve no Local do Crime ? ");
+	var q3 = prompt(msg + "Mora Perto da Vítima ? ");
+	var q4 = prompt(msg + "Devia Para A Vítima ? ");
+	var q5 = prompt(msg + "Já Trabalhou com a vítima");
+
+	var contaRespostas = 0;
+
+	if (q1.toLowerCase() == "s") {
+		contaRespostas++;
+	}
+
+	if (q2.toLowerCase() == "s") {
+		contaRespostas++;
+	}
+
+	if (q3.toLowerCase() == "s") {
+		contaRespostas++;
+	}
+
+	if (q4.toLowerCase() == "s") {
+		contaRespostas++;
+	}
+
+	if (q5.toLowerCase() == "s") {
+		contaRespostas++;
+	}
+
+	//document.write(contaRespostas);
+
+	var resposta = "";
+
+	if (contaRespostas == 2) {
+		resposta = "Suspeito!";
+
+	}else if (contaRespostas == 3 || contaRespostas == 4) {
+		resposta = "Cúmplice!";
+
+	}else if (contaRespostas == 5) {
+		resposta = "Assassino!";
+
+	}else{
+		resposta = "Inocente!";
+	}
+
+	document.write(resposta);
+
+</script>

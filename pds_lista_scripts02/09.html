@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+  /*
+    Data: 19/03/17
+    Nome: Vitória Nadine RM: 13573
+    Nome: Vitória Lima   RM: 13482
+  */
+    var nome = prompt("Digite o nome do produto:");
+    var qA = parseInt(prompt("Digite a quantidade adiquirida:"));
+    var pU = parseFloat(prompt("Digite o preço unitário"));
+
+    var total = qA * pU;
+    var desconto = 0;
+    var tP = total - desconto;
+
+    if (qA <= 5) {
+
+      desconto = total * 0.02;
+    }else if (qA > 5 && qA <= 10) {
+
+      desconto = total * 0.03;
+    }else if (qA > 10) {
+
+      desconto = total * 0.05;
+    }
+
+  document.write("Nome Produto: " + nome + "<br>");
+  document.write("Quantidade Adquirida: " + qA + "<br>");
+  document.write("Preço Unitário: " + pU + "<br>");
+  document.write("Total a Pagar: " + tP.toFixed(2) + "<br>");
+
+</script>

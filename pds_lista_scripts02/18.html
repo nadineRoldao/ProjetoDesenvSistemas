@@ -1,0 +1,69 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  /*
+    Data: 19/03/17
+    Nome: Vitória Nadine RM: 13573
+    Nome: Vitória Lima   RM: 13482
+  */
+
+  var X = parseFloat(prompt("Digite um número para um lado so triângulo"));
+  var Y = parseFloat(prompt("Digite um número para outro lado so triângulo"));
+  var Z = parseFloat(prompt("Digite um número para outro lado so triângulo"));
+  var ladosIguais = 0;
+
+   if (X < (Y + Z)) {
+
+     if ((X == Y) && (X == Z) && (Y == Z)) {
+       ladosIguais = 3;
+
+     }else if ((X == Y) || (X == Z) || (Y == Z)) {
+       ladosIguais = 2;
+
+     }else {
+       ladosIguais = 0;
+
+     }
+
+  }else if (Y < (X + Z)) {
+
+    if ((X == Y) && (X == Z) && (Y == Z)) {
+      ladosIguais = 3;
+
+    }else if ((X == Y) || (X == Z) || (Y == Z)) {
+      ladosIguais = 2;
+
+    }else {
+      ladosIguais = 0;
+
+    }
+
+  }else if (Z < (X + Y)) {
+
+    if ((X == Y) && (X == Z) && (Y == Z)) {
+      ladosIguais = 3;
+
+    }else if ((X == Y) || (X == Z) || (Y == Z)) {
+      ladosIguais = 2;
+
+    }else {
+      ladosIguais = 0;
+
+    }
+
+  }else{
+    document.write("Os valores informados não podem formar um triângulo!")
+
+  }
+
+  if (ladosIguais == 3) {
+    document.write("Triângulo Equilátero");
+
+  }else if (ladosIguais == 2) {
+    document.write("Triângulo Isóscele");
+
+  }else if (ladosIguais == 0) {
+    document.write("Triângulo Escaleno");
+
+  }
+
+</script>

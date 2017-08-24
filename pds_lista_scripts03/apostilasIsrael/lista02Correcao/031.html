@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  //Ex 08 da lista 2
+  /* O índice de massa corpórea (IMC) é calculado a partir da seguinte fórmula:
+
+IMC = Peso (kg) / Altura*Altura
+Monte um script para o usuário entrar com seu respectivo peso e altura. Após isso o script deverá calcular o IMC da pessoa e exibir uma das seguintes mensagens:
+
+<IMC>                    </IMC>	CLASSIFICAÇÃO
+ATÉ 18,<5>                 </5>	Abaixo do peso
+ATÉ <25>                    </25>	Peso Normal
+ATÉ <30>                    </30>	Sobrepeso
+ATÉ <35>                    </35>	Obeso Leve
+ATÉ <40>                    </40>	Obeso Moderado
+<ACIMA>                    </ACIMA> 40	Obeso Mórbido
+
+*/
+var peso = parseFloat(prompt("Digite seu peso: "));
+var altura = parseFloat(prompt("Digite sua altura: "));
+var imc = (peso / (altura * altura));
+
+if(isNaN(peso) || isNaN(altura)) {
+  alert("Campos não foram preenchidos corretamente.");
+  location.reload();
+} else {
+  if(imc <= 18.5) {
+    document.write("Abaixo do peso. <br/> Peso IMC: " + imc.toFixed(2));
+  } else if(imc <= 25) {
+    document.write("Peso normal. <br/> Peso IMC: " + imc.toFixed(2));
+  } else if(imc <= 30) {
+    document.write("Sobrepeso. <br/> Peso IMC: " + imc.toFixed(2));
+  } else if(imc <= 35) {
+    document.write("Obeso Leve. <br/> Peso IMC: " + imc.toFixed(2));
+  } else if(imc <= 40) {
+    document.write("Obeso Moderado. <br/> Peso IMC: " + imc.toFixed(2));
+  } else if(imc > 40) {
+    document.write("Obeso mórbido. <br/> Peso IMC: " + imc.toFixed(2));
+  }
+}
+
+
+
+</script>

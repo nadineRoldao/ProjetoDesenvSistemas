@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  /*
+    Data: 05/03/17
+    Nome: Vitória Nadine RM: 13573
+    Nome: Vitória Lima   RM: 13482
+  */
+
+  var peso = parseFloat(prompt("Digite seu peso"));
+  var numero = parseInt(prompt("Digite um número de 1 á 6"));
+  var gravidade = 0;
+
+  if (numero == 1) {
+    gravidade = 0.37;
+  }
+  if (numero == 2) {
+    gravidade = 0.88;
+  }
+  if (numero == 3) {
+    gravidade = 0.38;
+  }
+  if (numero == 4) {
+    gravidade = 2.64;
+  }
+  if (numero == 5) {
+    gravidade = 1.15;
+  }
+  if (numero == 6) {
+    gravidade = 1.17;
+  }
+
+  var pPlaneta = (peso/100)*gravidade;
+  document.write("Seu peso é: " + pPlaneta.toFixed(2));
+</script>

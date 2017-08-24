@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+//Nome: Vitória Lima RM: 13482
+//Nome: Vitória Nadine RM: 13573
+
+	var anterior = 0;
+	var atual = 0;
+	var sequencia = 0;
+
+	document.write("Sequência de Fibonacci: <br>");
+	for (var i = 0; i <= 14; i++) {
+		document.write(sequencia + " ");
+
+		sequencia = anterior + atual;
+		anterior = atual;
+		atual = sequencia;
+		if (i == 0) {
+			atual = 1;
+			sequencia = 1;
+		}
+	}
+
+
+</script>

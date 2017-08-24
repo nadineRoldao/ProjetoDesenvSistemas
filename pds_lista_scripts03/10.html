@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+//Nome: Vitória Lima RM: 13482
+//Nome: Vitória Nadine RM: 13573
+
+  var nomeProduto = prompt("Informe o nome do produto");
+  var precoProduto = parseFloat(prompt("Informe o preço do produto"));
+  var juros = 0;
+  var parcelas = precoProduto / 6;
+  var valorFinal = 0;
+
+  document.write("Nome do produto: " + nomeProduto + "<br>");
+  document.write("Preço inicial do produto: " + precoProduto + "<br>");
+
+  for (var i = 1; i < 6; i++) {
+      juros = (parcelas + 4) / 100;
+      document.write("Valor da parcela " + i + "" + juros.toFixed(2) + "<br>");
+  }
+    valorFinal = juros + parcelas + precoProduto;
+    document.write("Valor final: " + valorFinal.toFixed(2));
+
+</script>

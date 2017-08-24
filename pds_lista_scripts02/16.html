@@ -1,0 +1,43 @@
+<meta charset="utf-8"/>
+<script type="text/javascript">
+  /*
+    Data: 19/03/17
+    Nome: Vitória Nadine RM: 13573
+    Nome: Vitória Lima   RM: 13482
+  */
+
+  var nota1 = parseFloat(prompt("Digite a primeira nota do aluno: "));
+  var nota2 = parseFloat(prompt("Digite a segunda nota do aluno: "));
+  var nota3 = parseFloat(prompt("Digite a terceira nota do aluno: "));
+  var nota4 = parseFloat(prompt("Digite a quarta nota do aluno: "));
+  var media = (nota1 + nota2 + nota3 + nota4) /4;
+
+
+  if (media >= 9.0 && media <= 10.0) {
+    document.write("A: ");
+    document.write("APROVADO" + "<br>");
+  }
+  if (media >= 7.5 && media < 9.0) {
+    document.write("B: ");
+    document.write("APROVADO" + "<br>");
+  }
+  if (media >= 6.0 && media < 7.5) {
+    document.write("C: ");
+    document.write("APROVADO" + "<br>");
+  }
+  if (media >= 4.0 && media < 6.0) {
+    document.write("D: ");
+    document.write("REPROVADO" + "<br>");
+  }
+  if (media >= 0.0 && media < 4.0 ) {
+    document.write("E: ");
+    document.write("REPROVADO" + "<br>");
+  }
+
+  document.write("Nota1 foi: " + nota1.toFixed(2) + "<br/>");
+  document.write("Nota2 foi: " + nota2.toFixed(2) + "<br/>");
+  document.write("Nota3 foi: " + nota3.toFixed(2) + "<br/>");
+  document.write("Nota4 foi: " + nota4.toFixed(2) + "<br/>");
+  document.write("Sua média: " + media.toFixed(2) + "<br/>");
+
+</script>

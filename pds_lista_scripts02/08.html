@@ -1,0 +1,39 @@
+<meta charset="utf-8"/>
+<script type="text/javascript">
+  /*
+    Data: 19/03/17
+    Nome: Vitória Nadine RM: 13573
+    Nome: Vitória Lima   RM: 13482
+  */
+
+  var peso = parseFloat(prompt("Digite seu peso"));
+  var altura = parseFloat(prompt("Digite a sua altura"));
+  var imc = peso/(altura * altura);
+
+  document.write("Peso digitado: " + peso + "<br>");
+  document.write("Altura dogitada: " + altura + "<br>");
+  document.write("Seu IMC: " + imc.toFixed(2) + "<br>");
+
+  if (imc <= 18.5) {
+    document.write("Abaixo do peso");
+  }
+  else if (imc <= 25) {
+    document.write("Peso normal");
+  }
+  else if (imc <= 30) {
+    document.write("Sobrepeso");
+  }
+  else if (imc <= 35) {
+    document.write("Obeso Leve");
+  }
+  else if (imc <= 40) {
+    document.write("Obeso Moderado");
+  }
+  else{
+    document.write("Obeso Mórbido");
+  }
+
+
+
+
+</script>

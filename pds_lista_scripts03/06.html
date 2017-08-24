@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+//Nome: Vitória Lima RM: 13482
+//Nome: Vitória Nadine RM: 13573
+
+	var numero = 0;
+	var nPares = 0;
+	var nImpares = 0;
+	var maiores = 0;
+	var menores = 0;
+	var nSorteados = 0;
+
+	for (var i = 0; i <= 199; i++) {
+		numero = parseInt(Math.random() * 1001);
+
+		if (numero % 2 == 0) {
+			nPares++;
+		}else {
+			nImpares++;
+		}
+
+		if (numero > 500) {
+			maiores++;
+		}else {
+			menores++;
+		}
+
+		if (numero >= 300 && numero <= 700) {
+		    nSorteados++;
+	  }
+	}
+
+	document.write("Quantidade de números pares: " + nPares + "<br>");
+	document.write("Quantidade de números impares: " + nImpares + "<br>");
+	document.write("Quantidade de números maiores que 500: " + maiores + "<br>");
+	document.write("Quantidade de números menores que 500: " + menores + "<br>");
+	document.write("Total de números sorteados entre 300 e 700: " + nSorteados + "<br>");
+
+</script>

@@ -1,0 +1,32 @@
+<meta charset= "utf-8" />
+<script type="text/javascript">
+	/*
+		Data: 19/03/17
+		Nome: Vitória Nadine RM: 13573
+		Nome: Vitória Lima   RM: 13482
+	*/
+
+		var nDiarias = parseInt (prompt("Digite o número de Diárias"));
+		document.write("Número total de Diárias: " + nDiarias + "<br>");
+
+		var precoHotel = 360.00;
+		var taxaServicos = 0;
+
+		if (nDiarias > 15) {
+			taxaServicos = nDiarias * 35.50;
+
+		}else if (nDiarias == 15) {
+			taxaServicos = nDiarias * 46.00;
+
+		}else {
+			taxaServicos = nDiarias * 58.00;
+
+		}
+
+		var precoTotal = (precoHotel * nDiarias) + taxaServicos;
+
+		document.write("Preço Total: " + precoTotal + "<br>");
+		document.write("Total da taxa de seviço: " + taxaServicos + "<br>");
+
+
+</script>

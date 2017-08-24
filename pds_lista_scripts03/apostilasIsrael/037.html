@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+//Sortear 10 números pares.
+var numero = 0;
+for (var i = 0; i <= 9; i++) {
+  numero = parseInt(Math.random()*101);
+  while (numero % 2 != 0) {
+    numero = parseInt(Math.random()*101);
+  }
+  document.write("Número sorteado: " + numero +"<br />");
+}
+
+</script>

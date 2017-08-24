@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  //Ex 010 da lista 2
+  /*Elabore um script que dada a idade de um nadador classifique-o em uma das seguintes categorias:
+Infantil A = 5 a 7 anos
+Infantil B = 8 a 11 anos
+Juvenil A = 12 a 13 anos
+Juvenil B = 14 a 17 anos
+Adultos = Maiores de 18 anos
+
+*/
+var nadador = parseInt(prompt("Digite a idade do nadador: "));
+
+ if(isNaN(nadador)) {
+   alert("Campos não foram preenchidos corretamente.");
+
+   }
+   else {
+      if (nadador < 5) {
+      document.write("Não existe categoria");
+      }
+   else if (nadador >= 5 && nadador <= 7) {
+     document.write("Nadador da categoria Infantil A");
+   } else if(nadador <= 11) {
+     document.write("Nadador da categoria Infantil B");
+   } else if( nadador <= 13) {
+     document.write("Nadador da categoria Juvenil A");
+   } else if( nadador <= 17) {
+     document.write("Nadador da categoria Juvenil B");
+   } else if(nadador >= 18) {
+     document.write("Nadador da categoria Adulto");
+   }
+ }
+
+</script>

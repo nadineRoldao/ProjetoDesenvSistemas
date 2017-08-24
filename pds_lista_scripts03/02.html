@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+//Nome: Vitória Lima RM: 13482
+//Nome: Vitória Nadine RM: 13573
+
+  var sexo;
+  var idade = 0;
+  var salario = 0;
+  var qtdHomens = 0;
+  var mediaIdade = 0;
+  var somaIdades = 0;
+  var qtdMulheres = 0;
+  var menorSalario = 0;
+  var maiorSalario = 0;
+  var somaSalarios = 0;
+  var mediaSalarial = 0;
+
+  for (var i = 0; i <= 299; i++) {
+    salario = parseFloat(Math.random() * 20001)
+    somaSalarios += salario;
+
+    if(!menorSalario) {
+      menorSalario = salario;
+    }else if(salario < menorSalario) {
+      menorSalario = salario;
+    }
+
+    if(!maiorSalario) {
+      maiorSalario = salario;
+    }else if(salario > maiorSalario) {
+      maiorSalario = salario;
+    }
+
+    var sexo = Math.floor(Math.random() * 2);
+
+    if(!sexo) {
+      qtdHomens++;
+    }else {
+      qtdMulheres++;
+    }
+
+    idade = parseInt(Math.random() * 101);
+    somaIdades += idade;
+
+  }
+
+  mediaSalarial = somaSalarios / 300;
+  mediaIdade = parseInt(somaIdades / 300);
+
+  document.write("a) Média salarial: " + mediaSalarial.toFixed(2) + "<br>");
+  document.write("b) Menor salario: " + menorSalario.toFixed(2) + "<br>");
+  document.write("b) Maior salario: " + maiorSalario.toFixed(2) + "<br>");
+  document.write("c) Quantidade de mulheres: " + qtdMulheres + "<br>");
+  document.write("d) Quantidade de homens: " + qtdHomens + "<br>");
+  document.write("e) Média da idade: " + mediaIdade);
+</script>

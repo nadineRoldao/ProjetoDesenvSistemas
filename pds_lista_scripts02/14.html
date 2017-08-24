@@ -1,0 +1,92 @@
+<meta charset="utf-8"/>
+<script type="text/javascript">
+
+  /*
+    Data: 19/03/17
+    Nome: Vitória Nadine RM: 13573
+    Nome: Vitória Lima   RM: 13482
+  */
+  var carne = prompt("Digite o tipo de carne");
+  var quantidade = parseFloat(prompt("Digite a quantidade em kg"));
+  var pagamento = prompt("Digite o tipo de pagamento");
+  var preco = 0;
+
+  if (pagamento == "vinagretssoncard") {
+
+    if (carne == "file duplo") {
+      if (quantidade <= 5) {
+        preco = 4.90 * quantidade;
+
+      }else if (quantidade > 5){
+        preco = 5.80 * quantidade;
+      }
+    }
+
+    if (carne == "alcatra") {
+      if (quantidade <= 5) {
+        preco = 5.90 * quantidade;
+
+      }else if (quantidade > 5){
+        preco = 6.80 * quantidade;
+      }
+    }
+
+    if (carne == "picanha") {
+      if (quantidade <= 5) {
+        preco = 6.90 * quantidade;
+
+      }else if (quantidade > 5){
+        preco = 7.80 * quantidade;
+      }
+    }
+
+    var desconto = preco * 0.5;
+    preco = preco - desconto;
+
+
+  }else{
+    
+    if (carne == "file duplo") {
+      if (quantidade <= 5) {
+        preco = 4.90 * quantidade;
+
+      }else if (quantidade > 5){
+        preco = 5.80 * quantidade;
+      }
+    }
+
+    if (carne == "alcatra") {
+      if (quantidade <= 5) {
+        preco = 5.90 * quantidade;
+
+      }else if (quantidade > 5){
+        preco = 6.80 * quantidade;
+      }
+    }
+
+    if (carne == "picanha") {
+      if (quantidade <= 5) {
+        preco = 6.90 * quantidade;
+
+      }else if (quantidade > 5){
+        preco = 7.80 * quantidade;
+      }
+    }
+
+  }
+
+  document.write("Tipo de carne digitada: " + carne + "<br>");
+  document.write("Quantidade digitada: " + quantidade + "<br>");
+  document.write("Tipo de pagamento digitado: " + pagamento + "<br>");
+  document.write("Valor a pagar: " + preco + "<br>");
+
+
+
+
+    
+
+
+
+
+
+</script>

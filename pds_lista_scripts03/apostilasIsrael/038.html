@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+//Sortear 10 números pares.
+//Exibir o total de números sorteados para
+//termos a exibição de 10 pares
+var numero = 0;
+var totalsorteados =10;
+for (var i = 0; i <= 9; i++) {
+  numero = parseInt(Math.random()*101);
+  while (numero % 2 != 0) {
+    numero = parseInt(Math.random()*101);
+    totalsorteados++;
+  }
+  document.write("Número sorteado: " + numero +"<br />");
+}
+document.write("Total de números sorteados: " + totalsorteados +"<br />");
+
+
+
+
+
+</script>

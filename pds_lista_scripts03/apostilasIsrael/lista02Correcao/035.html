@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  //Ex 012 da lista 2
+  /*Monte um script onde você entre com um valor em MegaBytes e seja exibido o valor em bytes.
+*/
+var megaByte = parseFloat(prompt("Digite o valor em MegaByte: "));
+ var byte = (megaByte*1048576).toLocaleString('pt-BR');
+
+ if(isNaN(megaByte)) {
+   alert("Campos não foram preenchidos corretamente.");
+   }
+    else {
+   document.write("Valor em MegaByte: " + megaByte + "<br/>");
+   document.write("Convertendo... <br/>");
+   document.write(megaByte + " MB em Bytes: " + byte + " B <br/>");
+ }
+
+</script>

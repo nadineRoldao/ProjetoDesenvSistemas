@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  //Ex 011 da lista 2
+  /*Monte um script que peça a entrada de dois números. Exiba-os em ordem crescente e descrente.
+
+*/
+var numero1 = parseFloat(prompt("Digite o primeiro númro: "));
+ var numero2 = parseFloat(prompt("Digite o segundo número: "));
+
+ if(isNaN(numero1) || isNaN(numero2)) {
+   alert("Campos não foram preenchidos corretamente.");
+   }
+   else {
+   if(numero1 > numero2) {
+     document.write("Decrescente: " + numero1 + " e " + numero2 + "<br/>");
+     document.write("Crescente: " + numero2 + " e " + numero1 + "<br/>");
+   } if(numero2 > numero1) {
+     document.write("Decrescente: " + numero2 + " e " + numero1 + "<br/>");
+     document.write("Crescente: " + numero1 + " e " + numero2 + "<br/>");
+   }
+ }
+
+</script>

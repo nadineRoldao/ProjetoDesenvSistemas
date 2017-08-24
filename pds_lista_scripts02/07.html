@@ -1,0 +1,28 @@
+<meta charset="utf-8"/>
+<script type="text/javascript">
+  /*
+    Data: 19/03/17
+    Nome: Vitória Nadine RM: 13573
+    Nome: Vitória Lima   RM: 13482
+  */
+
+  var medio = parseFloat(prompt("Digite seu Saldo Médio"));
+  var credito = 0;
+  var especial = 0;
+
+  if (medio <= 2000.00) {
+    document.write("Nenhum Crédito" + "<br>");
+  }
+  if (medio >= 2000.00 && medio <= 10000.00) {
+    medio = (medio + 20/100);
+    document.write("Valor do saldo médio: " + medio + "<br>");
+  }
+  if (medio >= 10000.00 && medio <= 20000.00) {
+    medio = (medio + 30/100);
+    document.write("Valor do saldo médio: " + medio + "<br>");
+  }
+  if (medio > 20000.00) {
+    medio = (medio + 40/1000);
+    document.write("Valor do saldo médio:  " + medio + "<br>");
+  }
+</script>

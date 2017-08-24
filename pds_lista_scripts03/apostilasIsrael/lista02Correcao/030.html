@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  //Ex 07 da lista 2
+  /* Um determinado banco está concedendo um Crédito Especial aos seus clientes, variável de acordo com o saldo médio no último ano. Faça um script onde o usuário entre com seu saldo médio e calcule o valor do crédito de acordo com a tabela abaixo. Exibir na tela as seguintes informações:
+Saldo Médio - Percentual de Crédito - Valor de Crédito Especial.
+
+Saldo Médio 					                                      Percentual de Crédito
+Menor ou igual a R$ 2000,00			              Nenhum Crédito
+Entre R$ 2000,00 e R$ 10000,00 		         20% do valor do saldo médio
+Entre R$ 10000,00 e R$ 20000,00 		      30% do valor do saldo médio
+Acima de R$ 20000,00			                        40% do valor do saldo médio
+*/
+ var credito = 0;
+var saldo=parseFloat(prompt("Digite seu saldo: "));
+var percentual=0;
+var total = 0;
+if (saldo<=2000) {
+  total = saldo+ percentual;}
+
+ else if (saldo<=10000) {
+credito=saldo*0.20;
+total=saldo+credito;
+}
+
+else if (saldo<=20000){
+credito = saldo*0.30;
+total=saldo+credito;
+}
+ else if(saldo>20000){
+credito=saldo*0.40;
+total=saldo+credito;}
+
+else if (isNaN(saldo)) {
+  document.write("Erro na digitação<br>");
+}
+document.write("Seu saldo atual: "+ saldo +"<br />");
+document.write("Seu valor de crédito especial: "+ credito +"<br/>");
+document.write("Seu saldo com o crédito especial: "+ total +"<br />");
+
+
+
+
+</script>

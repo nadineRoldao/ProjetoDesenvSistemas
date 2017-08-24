@@ -1,0 +1,57 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	/*
+	Data: 19/03/17
+	Nome: Vitória Nadine RM: 13573
+	Nome: Vitória Lima   RM: 13482
+	*/
+	
+	// criando as variáveis necessárias
+	var metrosQuadrados = parseFloat(prompt("Informe a quantidade em metros quadrados a ser pintada: "));
+	var quantidadeTinta = metrosQuadrados / 6;
+	var valorPagar = 0;
+	var resultado = "";
+
+	// Situação 01 - ver a quantidade de latas necessárias para a pintura da área
+	if(quantidadeTinta % 18 == 0) {
+		var latas = quantidadeTinta / 18;
+		valorPagar = latas * 80.00;
+		valorPagar = valorPagar.toFixed(2);
+		resultado = "comprar apenas latas de 18 litros" + "<br>" + latas + " latas -> valor: " + valorPagar;
+	}else {
+		var latas = quantidadeTinta / 18;
+		latas = parseInt(latas) + 1;
+		valorPagar = latas * 80.00;
+		valorPagar = valorPagar.toFixed(2);
+		resultado = "comprar apenas latas de 18 litros" + "<br>" + latas + " latas -> valor: " + valorPagar;		
+	}
+
+	// imprimindo a quantidade de tinta necessária para pintar a área
+	document.write("Sugestão 01" + "<br>");
+	document.write("Quantidade de tinta necessária: " + quantidadeTinta.toFixed(2) + " litros <br>")
+	document.write(resultado + "<br>" + "<br>");
+
+
+	// Situação 02 - ver a quantidade de galões necessários para a pintura da área
+	if(quantidadeTinta % 3.6 == 0) {
+		var galoes = quantidadeTinta / 3.6;
+		valorPagar = galoes * 25.00;
+		valorPagar = valorPagar.toFixed(2);
+		resultado = "comprar apenas galões de 3.6 litros" + "<br>" + galoes + " galões -> valor: " + valorPagar;	
+
+	}else {
+		var galoes = quantidadeTinta / 3.6;
+		galoes = parseInt(galoes) + 1;
+		valorPagar = galoes * 25.00;
+		valorPagar = valorPagar.toFixed(2);
+		resultado = "comprar apenas galões de 3.6 litros" + "<br>" + galoes + " galões -> valor: " + valorPagar;	
+
+	}
+	
+	// imprimindo a quantidade de tinta necessária para pintar a área
+	document.write("Sugestão 02" + "<br>");
+	document.write("Quantidade de tinta necessária: " + quantidadeTinta.toFixed(2) + " litros" + "<br>")
+	document.write(resultado);
+
+</script>

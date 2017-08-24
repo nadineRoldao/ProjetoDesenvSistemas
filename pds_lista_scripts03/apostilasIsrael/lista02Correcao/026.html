@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  //Ex 03 da lista 2
+  //Escrever um script que peça cinco valores inteiros, calcular a sua média, e escrever na tela os números que são superiores à média..
+  var n1 = parseInt(prompt("Digite um número qualquer: "));
+  var n2 = parseInt(prompt("Digite um número qualquer: "));
+  var n3 =  parseInt(prompt("Digite um número qualquer: "));
+  var n4 = parseInt(prompt("Digite um número qualquer: "));
+  var n5 = parseInt(prompt("Digite um número qualquer: "));
+  var media =(n1+n2+n3+n4+n5)/5;
+document.write("Número digitado: " + n1 +"<br>");
+document.write("Número digitado: " + n2 +"<br>");
+document.write("Número digitado: " + n3 +"<br>");
+document.write("Número digitado: " + n4 +"<br>");
+document.write("Número digitado: " + n5 +"<br>");
+document.write("Média dos números digitados: " + media +"<br>");
+
+document.write("<h1>Números digitados maiores que a média</h1>");
+
+if (n1 > media) {
+  document.write( n1 +"<br>");
+}
+if (n2 > media) {
+  document.write( n2 +"<br>");
+}
+if (n3 > media) {
+  document.write( n3 +"<br>");
+}
+if (n4 > media) {
+  document.write( n4 +"<br>");
+}
+if (n5 > media) {
+  document.write( n5 +"<br>");
+}
+</script>
