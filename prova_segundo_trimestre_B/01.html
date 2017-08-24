@@ -7,20 +7,20 @@
 
 	if (valor <= 1000) {
 		var nota50 = parseInt(valor / 50);
-		document.write("Quantidade de notas de R$ 50,00: " + nota50);
+		document.write("Quantidade de notas de R$ 50,00: " + nota50 + "<br>");
 
 		sobra = valor - nota50 * 50;
 
 		var nota10 = parseInt(sobra / 10);
-		document.write("Quantidade de notas de R$ 10,00: " + nota10);
+		document.write("Quantidade de notas de R$ 10,00: " + nota10 + "<br>");
 
 		sobra -= nota10 * 10;
 
 		var nota5 = parseInt(sobra / 5);
-		document.write("Quantidade de notas de R$ 5,00: " + nota5);
+		document.write("Quantidade de notas de R$ 5,00: " + nota5 + "<br>");
 
 		var nota1 = sobra - nota5 * 5;
-		document.write("Quantidade de notas de R$ 1,00: " + nota1);
+		document.write("Quantidade de notas de R$ 1,00: " + nota1 + "<br>");
 	}else{
 		document.write("VALOR DE SAQUE INVÁLIDO");
 	}	
