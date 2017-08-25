@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	/* Nadine - 24/08/17 - exercicio 01 da lista 04 */
+	var tipoCombustivel = "";
+	var qtdCombustivel;
+	var valorPagar = 0.0;
+	var desconto = 0.0;
+
+	while(tipoCombustivel != "G" && tipoCombustivel != "A"){
+		tipoCombustivel = prompt("Digite G para Gasolina e A para Álcool:");
+		tipoCombustivel = tipoCombustivel.toUpperCase();
+	}
+
+	while(!qtdCombustivel || qtdCombustivel / 2 == NaN){
+		qtdCombustivel = parseInt(prompt("Informe a quantidade de combustível desejada:"));
+	}
+
+	switch(tipoCombustivel){
+		case "G":
+			valorPagar = 3.30 * qtdCombustivel;
+			if (qtdCombustivel <= 20) {
+				desconto = valorPagar * (4 / 100);
+			}else {
+				desconto = valorPagar * (6 / 100);
+			}
+			break;
+		case "A":
+			valorPagar = 2.90 * qtdCombustivel;
+			if (qtdCombustivel <= 20) {
+				desconto = valorPagar * (3 / 100);
+			}else {
+				desconto = valorPagar * (5 / 100);
+			}
+	}
+
+	valorPagar = valorPagar - desconto;
+
+	document.write("Tipo do combustível: " + tipoCombustivel + "<br>");
+	document.write("Quantidade de combustível: " + qtdCombustivel + "<br>");
+	document.write("Valor do desconto: " + desconto.toFixed(2) + "<br>");
+	document.write("Valor final a pagar: " + valorPagar.toFixed(2) + "<br>")
+	
+</script>
+
