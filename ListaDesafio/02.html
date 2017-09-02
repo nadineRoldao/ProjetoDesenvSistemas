@@ -11,7 +11,7 @@
 		tipoCombustivel = tipoCombustivel.toUpperCase();
 	}
 
-	while(!qtdCombustivel || qtdCombustivel / 2 == NaN){
+	while(!qtdCombustivel || isNaN(qtdCombustivel)){
 		qtdCombustivel = parseInt(prompt("Informe a quantidade de combustível desejada:"));
 	}
 

@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	/* Nadine - 26/08/17 - exercicio 03 da lista 04 */
+	var nome = prompt("Digite o nome do produto");
+	var quantidade = parseInt(prompt("Digite a quantidade adquirida"));
+	var precoUni = prompt("Digite o preço unitário");
+	precoUni = parseFloat(precoUni.replace(",","."));
+	var total = quantidade * precoUni;
+	var desconto = 0;
+
+	while(isNaN(quantidade)){
+		quantidade = parseInt(prompt("Digite a quantidade adquirida"));
+	}
+	while(isNaN(precoUni)){
+		precoUni = parseFloat(prompt("Digite o preço unitário"));
+	}
+
+	if (quantidade <= 5) {
+		desconto = total * (2 / 100);
+	}else if (quantidade > 5 && quantidade <= 10) {
+		desconto = total * (3 / 100);
+	}else{
+		desconto = total * (5 / 100);
+	}
+
+	var totalPagar = total - desconto;
+
+	document.write("Descrição do produto: " + nome + "<br>");
+	document.write("Quantidade adquirida: " + quantidade + "<br>");
+	document.write("Preço unitário: " + precoUni.toFixed(2) + "<br>");
+	document.write("Total sem desconto: " + total.toFixed(2) + "<br>");
+	document.write("Valor do desconto: " + desconto.toFixed(2) + "<br>");
+	document.write("Valor total a pagar com deconto: " + totalPagar.toFixed(2) + "<br>");
+
+
+</script>

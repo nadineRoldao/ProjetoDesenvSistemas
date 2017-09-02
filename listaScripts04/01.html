@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var vetor = new Array();
+	var nEntre3e7 = 0;
+	var qtdPares = 0;
+	var qtdMenores3 = 0;
+	var qtdImpares = 0;
+
+	for (var i = 0; i < 50; i++) {
+		vetor[i] = parseInt(Math.random() * 9);
+		
+		if (vetor[i] >= 3 && vetor[i] <= 7) {
+			nEntre3e7++;
+		}
+
+		if (vetor[i] % 2 == 0) {
+			qtdPares++;
+		}else{
+			qtdImpares++;
+		}
+
+		if (vetor[i] < 3) {
+			qtdMenores3++;
+		}
+	}
+	document.write("Vetor com 50 elementos: " + vetor + "<br>");
+	document.write("Quantidade de números entre 3 e 7: " + nEntre3e7 + "<br>");
+	document.write("Quantidade de números pares: " + qtdPares + "<br>");
+	document.write("Quantidade de números menores que 3: " + qtdMenores3 + "<br>");
+	document.write("Quantidade de números impares" + qtdImpares);
+
+
+</script>
