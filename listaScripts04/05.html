@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var vetor = new Array();
+	var maiorValor = 0;
+
+	for(var i = 0; i < 42; i++){
+		vetor[i] = parseInt(Math.random() * 100);
+
+	}
+
+	for(i in vetor){
+		if(vetor[i] > maiorValor){
+			maiorValor = vetor[i];
+		}
+	}
+
+	document.write("Vetor antes do cálculo: " + vetor + "<br>");
+
+	for(i in vetor){
+		vetor[i] = vetor[i] * maiorValor; 
+	}
+	document.write("maior valor: " + maiorValor + "<br>");
+
+	document.write("Vetor depois do cálculo: " + vetor + "<br>");
+	
+
+</script>

@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var vetor = new Array();
+	var posicaoMaior = 0;
+	var posicaoMenor = 0;
+	var menorDeTodos = 20;
+	var maiorDeTodos = 0;
+
+	while(vetor.length < 10){
+		vetor[vetor.length] = parseInt(Math.random() * 20);
+	}
+
+	for(i in vetor){
+		if (vetor[i] < menorDeTodos) {
+			menorDeTodos = vetor[i];
+			posicaoMenor = i;
+		}
+
+		if(vetor[i] > maiorDeTodos){
+			maiorDeTodos = vetor[i];
+			posicaoMaior = i;
+		}
+	}
+
+	document.write("Lista: " + vetor + "<br>");
+
+	document.write("Maior elemento: " + maiorDeTodos + " Posição onde se encontra: " + posicaoMaior + "<br>");
+
+	document.write("Menor elemento: " + menorDeTodos + " Posição onde se encontra: " + posicaoMenor + "<br>");
+	
+</script>

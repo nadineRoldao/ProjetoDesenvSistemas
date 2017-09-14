@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var vetor = new Array();
+	var multiplo2 = [];
+	var multiplo5 = [];
+	var multiplo2e5 = [];
+
+	for (var i = 0; i <= 4; i++) {
+		vetor[i] = parseInt(prompt("Digite um número: "));
+
+		if (vetor[i] % 2 == 0) {
+			multiplo2[multiplo2.length] = vetor[i];
+		}
+
+		if (vetor[i] % 5 == 0) {
+			multiplo5[multiplo5.length] = vetor[i];
+		}
+
+		if ((vetor[i] % 5 == 0) && (vetor[i] % 2 == 0)) {
+			multiplo2e5[multiplo2e5.length] = vetor[i];
+		}		
+
+	}
+
+	document.write("Lista inicial: " + 	vetor + "<br>");
+	document.write("Multiplos de 2: " + multiplo2 + "<br>");
+	document.write("Multiplos de 5: " + multiplo5 + "<br>");
+	document.write("Multiplos de 2 e 5: " + multiplo2e5 + "<br>");
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

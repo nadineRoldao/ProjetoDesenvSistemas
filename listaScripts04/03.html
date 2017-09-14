@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var vetor = new Array();
+	var qtdN3 = 0;
+	var somaMaiores5 = 0;
+
+	for (var i = 0; i <= 29; i++) {
+		vetor[i] = parseInt(Math.random() * 9);
+		if (vetor[i] == 3) {
+			qtdN3++;
+		}
+
+		if (vetor[i] > 5) {
+			somaMaiores5 += vetor[i];
+		}
+	}
+
+	document.write("Números: " + vetor + "<br>");
+	document.write("Quantidade de números maiores que 3: " + qtdN3 + "<br>");
+	document.write("Soma dos números maiores que 5: " + somaMaiores5 + "<br>");
+
+
+</script>
